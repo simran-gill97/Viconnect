@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="loginbox">
+        <img src="images/phone-icon.png" class="raj">
+        <h1>Login</h1>
+        <form>
+            <span style="color: red;" id="usererror"></span>
+            <p>User name <span style="color: red;">*</span></p>
+            
+            <input type="text" id = "name" placeholder= "Enter username" />
+            <span style="color: red;" id="passerror"></span>
+            <p>Password <span style="color: red;">*</span></p>
+            <input type="password" id="pass" name="" placeholder= "Enter password" /> <br><br>
+            <input type="submit" name="" value="Login" id="submit" onclick=" return validate()"/><br> <br>
+            <a href="#">Forgot Password</a> <br>
+            <a href = "#">Create an account</a>
+        </form>
+    </div>
+    
+</body>
+<script>
+   
+        function validate()
+        {
+            var user = document.getElementById("name").value;
+            var password = document.getElementById("pass").value;
+           
+            debugger;
+            if (user == "")
+            {
+                document.getElementById("usererror").innerHTML = "User Name can not be blank";
+                return false
+                
+            }
+            else
+            {
+                document.getElementById("usererror").innerHTML = "";
+                
+            }
+            if(password == "")
+            {
+                document.getElementById("passerror").innerHTML = "Password can not be blank";
+                return false
+            }
+            else
+            {
+                document.getElementById("passerror").innerHTML = "";
+                
+            }
+            
+           
+        }
+
+       
+    
+
+    
+    
+</script>
+</html>
