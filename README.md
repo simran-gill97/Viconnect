@@ -1,2 +1,2 @@
 # Viconnect
-Viconnect is my lambton collage 2nd sem project
+Viconnect is my project of 2nd sem lambton collage
